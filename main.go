@@ -34,5 +34,5 @@ func main() {
 		return c.SendFile("./output.jpeg")
 	})
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(":8000"))
 }
