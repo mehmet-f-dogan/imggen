@@ -11,7 +11,11 @@ import (
 
 func main() {
 	app := fiber.New()
-
+	
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendStatus(200)
+	})
+	
 	app.Get("/:name", func(c *fiber.Ctx) error {
 		name := c.Params("name")
 
