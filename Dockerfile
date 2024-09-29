@@ -33,7 +33,7 @@ COPY --from=builder /app/brody.jpeg .
 RUN chmod +x script.sh
 
 # Expose the port
-EXPOSE 3000
+EXPOSE 8000
 
 # Command to run the binary
 CMD ["./server"]
